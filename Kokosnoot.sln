@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kokosnoot", "Kokosnoot\Koko
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kokosnoot.Tests", "..\..\Visual Studio 2013\Projects\Kokosnoot\Kokosnoot.Tests\Kokosnoot.Tests.csproj", "{20B463AC-E026-4BAF-A55B-E42BFF5270A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kokosnoot.Services", "..\Kokosnoot.Services\Kokosnoot.Services.csproj", "{51443873-4517-4159-93D7-5192FB5600BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kokosnoot.Models", "Kokosnoot.Models\Kokosnoot.Models.csproj", "{4C3A7613-3459-4B74-8D66-3AA626EC33A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{20B463AC-E026-4BAF-A55B-E42BFF5270A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20B463AC-E026-4BAF-A55B-E42BFF5270A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20B463AC-E026-4BAF-A55B-E42BFF5270A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51443873-4517-4159-93D7-5192FB5600BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51443873-4517-4159-93D7-5192FB5600BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51443873-4517-4159-93D7-5192FB5600BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51443873-4517-4159-93D7-5192FB5600BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C3A7613-3459-4B74-8D66-3AA626EC33A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C3A7613-3459-4B74-8D66-3AA626EC33A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C3A7613-3459-4B74-8D66-3AA626EC33A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C3A7613-3459-4B74-8D66-3AA626EC33A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
