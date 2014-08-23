@@ -18,6 +18,8 @@ bld/
 
 # Local data
 App_Data/
+Store/
+raven/
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
