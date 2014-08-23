@@ -11,6 +11,6 @@ namespace Kokosnoot.Models
         public string Id { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
-        public string Footer { get; set; }
+        public DateTime Published { get; set; }
     }
 }

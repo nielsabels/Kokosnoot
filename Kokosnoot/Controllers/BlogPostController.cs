@@ -11,9 +11,9 @@ namespace Kokosnoot.Controllers
 {
     public class BlogPostController : Controller
     {
-        private readonly BlogPostService _blogPostService;
+        private readonly IBlogPostService _blogPostService;
 
-        public BlogPostController(BlogPostService blogPostService)
+        public BlogPostController(IBlogPostService blogPostService)
         {
             _blogPostService = blogPostService;
         }
@@ -40,16 +40,9 @@ namespace Kokosnoot.Controllers
         [HttpPost]
         public ActionResult Create(FormCollection collection)
         {
-            try
-            {
-                _blogPostService.CreateAnyBlogPost();
+            _blogPostService.CreateAnyBlogPost();
 
-                return RedirectToAction("Index", "Home");
-            }
-            catch
-            {
-                return View();
-            }
+            return RedirectToAction("Index", "Home");
         }
 
         // GET: BlogPost/Edit/5

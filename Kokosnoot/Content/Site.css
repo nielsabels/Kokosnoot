@@ -22,3 +22,25 @@ select,
 textarea {
     max-width: 280px;
 }
+
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: orange; 
+    background-color: orange; 
+}
+
+div.navbar-inverse {
+    border-color: #F0F6FF;
+}
+
+.jumbotron {
+    background-color: #F0F6FF;
+}
+
+        <img class="blogpost-img" data-bind="attr:{ src: Url() }, click: $root.showPopup" />
+.img {
+           max-width: 100%;                                                                                        
+                                                                                           
+}

@@ -1,4 +1,5 @@
 using System;
+using Kokosnoot.Services;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
 using Raven.Client;
@@ -37,8 +38,8 @@ namespace Kokosnoot.App_Start
             // NOTE: To load from web.config uncomment the line below. Make sure to add a Microsoft.Practices.Unity.Configuration to the using statements.
             // container.LoadConfiguration();
 
-            // TODO: Register your types here
-            container.RegisterInstance<IDocumentStore>(new EmbeddableDocumentStore(){ DataDirectory = "~/App_Data/Store" }.Initialize());   
+            container.RegisterInstance<IDocumentStore>(new EmbeddableDocumentStore() { DataDirectory = "~/App_Data/Store" }.Initialize());
+            container.RegisterType<IBlogPostService, BlogPostService>();
         }
     }
 }

@@ -5,8 +5,6 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kokosnoot", "Kokosnoot\Kokosnoot.csproj", "{B0608A31-D87D-4738-A6A3-7949C83AF57A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kokosnoot.Tests", "Kokosnoot.Tests\Kokosnoot.Tests.csproj", "{20B463AC-E026-4BAF-A55B-E42BFF5270A1}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kokosnoot.Services", "Kokosnoot.Services\Kokosnoot.Services.csproj", "{51443873-4517-4159-93D7-5192FB5600BA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kokosnoot.Models", "Kokosnoot.Models\Kokosnoot.Models.csproj", "{4C3A7613-3459-4B74-8D66-3AA626EC33A7}"
@@ -21,10 +19,6 @@ Global
 		{B0608A31-D87D-4738-A6A3-7949C83AF57A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0608A31-D87D-4738-A6A3-7949C83AF57A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0608A31-D87D-4738-A6A3-7949C83AF57A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{20B463AC-E026-4BAF-A55B-E42BFF5270A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{20B463AC-E026-4BAF-A55B-E42BFF5270A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{20B463AC-E026-4BAF-A55B-E42BFF5270A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{20B463AC-E026-4BAF-A55B-E42BFF5270A1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{51443873-4517-4159-93D7-5192FB5600BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{51443873-4517-4159-93D7-5192FB5600BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51443873-4517-4159-93D7-5192FB5600BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
