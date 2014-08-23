@@ -17,7 +17,7 @@ bld/
 [Oo]bj/
 
 # Local data
-App_Data/Store
+App_Data/
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
