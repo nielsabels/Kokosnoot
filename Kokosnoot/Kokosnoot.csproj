@@ -301,7 +301,7 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Kokosnoot.Services\Kokosnoot.Services.csproj">
+    <ProjectReference Include="..\Kokosnoot.Services\Kokosnoot.Services.csproj">
       <Project>{51443873-4517-4159-93d7-5192fb5600ba}</Project>
       <Name>Kokosnoot.Services</Name>
     </ProjectReference>
