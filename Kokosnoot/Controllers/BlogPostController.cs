@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Kokosnoot.Models;
+using Kokosnoot.Services;
+using Raven.Client.Embedded;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +11,13 @@ namespace Kokosnoot.Controllers
 {
     public class BlogPostController : Controller
     {
+        private readonly BlogPostService _blogPostService;
+
+        public BlogPostController(BlogPostService blogPostService)
+        {
+            _blogPostService = blogPostService;
+        }
+
         // GET: BlogPost
         public ActionResult Index()
         {
@@ -32,7 +42,7 @@ namespace Kokosnoot.Controllers
         {
             try
             {
-                
+                _blogPostService.CreateAnyBlogPost();
 
                 return RedirectToAction("Index", "Home");
             }

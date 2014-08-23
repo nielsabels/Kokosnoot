@@ -1,6 +1,8 @@
 using System;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
+using Raven.Client;
+using Raven.Client.Embedded;
 
 namespace Kokosnoot.App_Start
 {
@@ -36,7 +38,7 @@ namespace Kokosnoot.App_Start
             // container.LoadConfiguration();
 
             // TODO: Register your types here
-            // container.RegisterType<IProductRepository, ProductRepository>();
+            container.RegisterInstance<IDocumentStore>(new EmbeddableDocumentStore(){ DataDirectory = "~/App_Data/Store" }.Initialize());   
         }
     }
 }
