@@ -39,7 +39,7 @@ div.navbar-inverse {
     background-color: #F0F6FF;
 }
 
-        <img class="blogpost-img" data-bind="attr:{ src: Url() }, click: $root.showPopup" />
+
 .img {
            max-width: 100%;                                                                                        
                                                                                            
