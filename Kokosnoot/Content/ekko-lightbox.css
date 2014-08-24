@@ -61,3 +61,13 @@
 .ekko-lightbox .modal-footer {
   text-align: left;
 }
+
+.ekko-lightbox .modal-header {
+    border-bottom: 0px;
+}
+
+.ekko-lightbox .modal-title
+{
+    display: none;
+}
+
