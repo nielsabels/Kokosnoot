@@ -1,4 +1,5 @@
-﻿using Kokosnoot.Models;
+﻿using System.Net;
+using Kokosnoot.Models;
 using Kokosnoot.Services;
 using Raven.Client.Embedded;
 using System;
@@ -6,6 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Raven.Database.Impl.Clustering;
+using Raven.Imports.Newtonsoft.Json;
 
 namespace Kokosnoot.Controllers
 {
@@ -27,7 +30,24 @@ namespace Kokosnoot.Controllers
         // GET: BlogPost/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            ActionResult actionResult = null;
+            BlogPost blogPost = null;
+
+            try
+            {
+                blogPost = _blogPostService.GetBlogPost(id);
+                if (blogPost != null)
+                    actionResult = View(blogPost);
+            }
+            catch (Exception)
+            {
+                actionResult = new HttpStatusCodeResult(HttpStatusCode.InternalServerError);
+            }
+
+            if (blogPost == null)
+                actionResult = new HttpStatusCodeResult(HttpStatusCode.NotFound);
+
+            return actionResult;
         }
 
         // GET: BlogPost/Create

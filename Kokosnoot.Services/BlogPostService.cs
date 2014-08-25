@@ -1,5 +1,6 @@
 ﻿using System.Security.Cryptography.X509Certificates;
 using Kokosnoot.Models;
+using Kokosnoot.Services.Extensions;
 using Raven.Client;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,7 @@ namespace Kokosnoot.Services
     public interface IBlogPostService
     {
         IList<BlogPost> GetBlogPosts();
-        BlogPost GetBlogPost(string id);
+        BlogPost GetBlogPost(int id);
         void CreateAnyBlogPost();
     }
 
@@ -34,11 +35,12 @@ namespace Kokosnoot.Services
             }   
         }
 
-        public BlogPost GetBlogPost(string id)
+        public BlogPost GetBlogPost(int id)
         {
             using (var session = _documentStore.OpenSession())
             {
-                var blogPost = session.Load<BlogPost>(id);
+                var fullyQualifiedId = session.GetStringId<BlogPost>(id);
+                var blogPost = session.Load<BlogPost>(fullyQualifiedId);
                 return blogPost;
             }
         }

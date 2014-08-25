@@ -1,0 +1,11 @@
+﻿@model Kokosnoot.Models.BlogPost
+
+<div class="page-header">
+    <h1>@Html.Encode(Model.Title)</h1>
+    <span class="glyphicon glyphicon-time"></span>
+    <small style="margin-left: 2px">@Html.Encode(Model.Published)</small>
+</div>
+<p>
+    @Html.Raw(Model.Content)
+</p>
+

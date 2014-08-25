@@ -27,20 +27,25 @@ hr {
     border: none;
     height: 1px;
     /* Set the hr color */
-    color: orange; 
-    background-color: orange; 
 }
 
+hr {
+    color: lightblue;
+    background-color: lightblue;
+}
 div.navbar-inverse {
-    border-color: #F0F6FF;
+    border-color: lightblue;
 }
 
 .jumbotron {
-    background-color: #F0F6FF;
+    background-color: lightblue;
 }
 
+.navbar {
+    background-color: #FAFAFA;
+    display: none;
+}
 
-.img {
-           max-width: 100%;                                                                                        
-                                                                                           
+.page-header {
+    border-color: lightblue;
 }

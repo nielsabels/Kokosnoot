@@ -1,0 +1,20 @@
+﻿hr {
+    color: lightblue;
+    background-color: lightblue;
+}
+div.navbar-inverse {
+    border-color: lightblue;
+}
+
+.jumbotron {
+    background-color: lightblue;
+}
+
+.navbar {
+    background-color: #FAFAFA;
+    display: none;
+}
+
+.page-header {
+    border-color: lightblue;
+}
