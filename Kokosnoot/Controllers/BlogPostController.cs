@@ -61,8 +61,8 @@ namespace Kokosnoot.Controllers
         [ValidateInput(false)]
         public ActionResult Create(BlogPost blogPost)
         {
-            //_blogPostService.CreateAnyBlogPost();
-            _blogPostService.CreateBlogPost(blogPost);
+            _blogPostService.CreateAnyBlogPost();
+            //_blogPostService.CreateBlogPost(blogPost);
             
             return RedirectToAction("Index", "Home");
         }
