@@ -26,13 +26,10 @@ textarea {
 hr {
     border: none;
     height: 1px;
-    /* Set the hr color */
+    color: #FFAE1F;
+    background-color: #FFAE1F;
 }
 
-hr {
-    color: lightblue;
-    background-color: lightblue;
-}
 div.navbar-inverse {
     border-color: lightblue;
 }
@@ -43,9 +40,13 @@ div.navbar-inverse {
 
 .navbar {
     background-color: #FAFAFA;
-    display: none;
+    display: block;
 }
 
 .page-header {
     border-color: lightblue;
+}
+
+.spacer {
+    margin-top: 40px; 
 }

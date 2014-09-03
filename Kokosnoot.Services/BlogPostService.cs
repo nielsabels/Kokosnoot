@@ -14,6 +14,7 @@ namespace Kokosnoot.Services
     {
         IList<BlogPost> GetBlogPosts();
         BlogPost GetBlogPost(int id);
+        void CreateBlogPost(BlogPost blogPost);
         void CreateAnyBlogPost();
     }
 
@@ -30,7 +31,7 @@ namespace Kokosnoot.Services
         {
             using (var session = _documentStore.OpenSession())
             {
-                var blogPosts = session.Query<BlogPost>().OrderBy(blogPost => blogPost.Published).ToList();
+                var blogPosts = session.Query<BlogPost>().OrderByDescending(blogPost => blogPost.Published).ToList();
                 return blogPosts;
             }   
         }
@@ -45,11 +46,21 @@ namespace Kokosnoot.Services
             }
         }
 
+        public void CreateBlogPost(BlogPost blogPost)
+        {
+            using (var session = _documentStore.OpenSession())
+            {
+                blogPost.Published = DateTime.Today;
+                session.Store(blogPost);
+                session.SaveChanges();
+            }
+        }
+
         public void CreateAnyBlogPost()
         {
             using (var session = _documentStore.OpenSession())
             {
-                createBlogPost(
+                CreateBlogPost(
                     session,
                     "BlogPosts/1",
                     "Lorem ipsum dolor sit amet",
@@ -58,7 +69,7 @@ namespace Kokosnoot.Services
                     );
 
                 
-                createBlogPost(
+                CreateBlogPost(
                     session,
                     "BlogPosts/2",
                     "Neque porro quisquam est qui dolorem",
@@ -70,7 +81,7 @@ namespace Kokosnoot.Services
             }
         }
 
-        private void createBlogPost(IDocumentSession session, string id, string title, string content, DateTime published)
+        private void CreateBlogPost(IDocumentSession session, string id, string title, string content, DateTime published)
         {
             var blogPost = new BlogPost() {Content = content, Id = id, Published = published, Title = title};
             session.Store(blogPost);

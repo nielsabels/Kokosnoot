@@ -38,7 +38,7 @@ namespace Kokosnoot.App_Start
             container.RegisterInstance(new EmbeddableDocumentStore()
                 {
                     ConnectionStringName = "RavenDB", 
-                    UseEmbeddedHttpServer = false
+                    UseEmbeddedHttpServer = true
                 }.Initialize());
 
             container.RegisterType<IBlogPostService, BlogPostService>();
