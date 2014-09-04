@@ -64,7 +64,7 @@ namespace Kokosnoot.Services
                     session,
                     "BlogPosts/1",
                     "Roodebeek",
-                    "<p><p><a href=\"http://i.imgur.com/Ttd0aJK.jpg\" data-toggle=\"lightbox\"><img src=\"http://i.imgur.com/JR0JScQl.jpg\" class=\"img-responsive\"></a></p></p>",
+                    "<p><p><a href=\"http://i.imgur.com/Ttd0aJK.jpg\" data-toggle=\"lightbox\"><img src=\"http://i.imgur.com/JR0JScQ.jpg\" class=\"img-responsive\"></a></p></p>",
                     new DateTime(2014, 08, 23)
                     );
 
