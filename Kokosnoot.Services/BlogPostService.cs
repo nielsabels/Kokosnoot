@@ -65,7 +65,7 @@ namespace Kokosnoot.Services
                     "BlogPosts/1",
                     "Roodebeek",
                     "<p><p><a href=\"http://i.imgur.com/Ttd0aJK.jpg\" data-toggle=\"lightbox\"><img src=\"http://i.imgur.com/JR0JScQ.jpg\" class=\"img-responsive\"></a></p></p>",
-                    new DateTime(2014, 08, 23)
+                    new DateTime(2014, 08, 30)
                     );
 
                 
@@ -73,8 +73,8 @@ namespace Kokosnoot.Services
                     session,
                     "BlogPosts/2",
                     "Erasmus bridge, Rotterdam",
-                    "<p><p><a href=\"http://i.imgur.com/yqH9qyU.jpg\" data-toggle=\"lightbox\"><img src=\"http://i.imgur.com/yqH9qyU.jpg\" class=\"img-responsive\"></a></p></p>",
-                    new DateTime(2014, 08, 24)
+                    "<p><p><a href=\"http://i.imgur.com/zpw7gOV.jpg\" data-toggle=\"lightbox\"><img src=\"http://i.imgur.com/U8M7Bva.jpg\" class=\"img-responsive\"></a></p></p>",
+                    new DateTime(2014, 09, 04)
                     );
 
                 CreateBlogPost(
@@ -82,7 +82,7 @@ namespace Kokosnoot.Services
                     "BlogPosts/3",
                     "A Vespa called Mojito",
                     "<p><p><a href=\"http://i.imgur.com/I4XgNQs.jpg\" data-toggle=\"lightbox\"><img src=\"http://i.imgur.com/I4XgNQs.jpg\" class=\"img-responsive\"></a></p></p>",
-                    new DateTime(2014, 08, 19)
+                    new DateTime(2014, 08, 28)
                 );
 
                 session.SaveChanges();
