@@ -49,7 +49,7 @@ namespace Kokosnoot.Services
         {
             using (var session = _documentStore.OpenSession())
             {
-                blogPost.Published = DateTime.Today;
+                blogPost.Published = DateTime.UtcNow;
                 session.Store(blogPost);
                 session.SaveChanges();
             }
