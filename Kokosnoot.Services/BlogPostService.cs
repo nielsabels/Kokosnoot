@@ -30,7 +30,7 @@ namespace Kokosnoot.Services
         {
             using (var session = _documentStore.OpenSession())
             {
-                var blogPosts = session.Query<BlogPost>().OrderByDescending(blogPost => blogPost.Published).ToList();
+                var blogPosts = session.Advanced.LoadStartingWith<BlogPost>("BlogPosts/").OrderByDescending(blogPost => blogPost.Published).ToList();
                 return blogPosts;
             }
         }
