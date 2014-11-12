@@ -1,9 +1,12 @@
-﻿@model Kokosnoot.Models.BlogPost
+﻿@using Kokosnoot.Extensions
+@model Kokosnoot.Models.BlogPost
 
 <div class="page-header">
     <h1>@Html.Encode(Model.Title)</h1>
     <span class="fa fa-clock-o "></span>
-    <small style="margin-left: 2px">@Html.Encode(Model.Published.ToString("dddd, dd MMMM yyyy"))</small>
+    <small style="margin-left: 2px">
+        @Html.ActionLink(@Html.Encode(Model.Published.ToString("dddd, dd MMMM yyyy")), "Details", "BlogPost", new { id = Model.MvcDocumentId()}, null)
+    </small>
 </div>
 <p>
     @Html.Raw(Model.Content)
