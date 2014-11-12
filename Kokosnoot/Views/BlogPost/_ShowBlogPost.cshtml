@@ -8,7 +8,7 @@
         @Html.ActionLink(@Html.Encode(Model.Published.ToString("dddd, dd MMMM yyyy")), "Details", "BlogPost", new { id = Model.MvcDocumentId()}, null)
     </small>
 </div>
-<p>
+<p class="">
     @Html.Raw(Model.Content)
 </p>
 

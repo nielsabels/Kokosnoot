@@ -49,3 +49,11 @@ div.navbar-inverse {
 .spacer {
     margin-top: 40px; 
 }
+
+.jumbotron {
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+img {
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
+}
