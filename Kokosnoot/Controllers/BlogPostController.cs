@@ -61,10 +61,19 @@ namespace Kokosnoot.Controllers
         [ValidateInput(false)]
         public ActionResult Create(BlogPost blogPost)
         {
-            _blogPostService.CreateAnyBlogPost();
-            //_blogPostService.CreateBlogPost(blogPost);
+            ActionResult actionResult = null;
             
-            return RedirectToAction("Index", "Home");
+            try
+            {
+                blogPost = _blogPostService.CreateBlogPost(blogPost);    
+                actionResult = RedirectToAction("Index", "Home");
+            }
+            catch (Exception)
+            {
+                actionResult = new HttpStatusCodeResult(HttpStatusCode.InternalServerError);
+            }
+
+            return actionResult;
         }
 
         // GET: BlogPost/Edit/5
